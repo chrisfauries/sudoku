@@ -1,0 +1,28 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 100%;
+  width: 100%;
+}
+
+.center,
+.corner {
+  font-size: 8px;
+}
+
+.corner {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  white-space: nowrap;
+  text-align: start;
+  margin-left: 1px;
+  letter-spacing: 0.5px;
+}
+
+.center {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}

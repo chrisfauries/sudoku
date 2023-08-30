@@ -1,0 +1,79 @@
+.container.container {
+  background-color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  border: solid #555 .5px;
+  cursor: pointer;
+  font-size: 24px;
+  align-items: center;
+  padding:0;
+
+  &:focus {
+    z-index: 1;
+    outline: none;
+    background-color: rgb(181, 235, 253);
+  }
+
+  &.empty {
+    background-color: white;
+    &:focus {
+      background-color: rgb(221, 247, 255);
+    }
+  }
+
+  &.correct {
+    color: blue;
+  }
+
+  &.wrong {
+    background-color: red;
+    &:focus {
+      background-color: #fa4a50;
+    }
+  }
+
+  &.top-edge {
+    border-top: solid black 1px;
+  }
+
+  &.right-edge {
+    border-right: solid black 1px;
+  }
+}
+
+$intersection-color: #efefef;
+$matching-color: lightblue;
+
+[data-selected-row="0"] [data-row="0"],
+[data-selected-column="0"] [data-column="0"],
+[data-selected-row="1"] [data-row="1"],
+[data-selected-column="1"] [data-column="1"],
+[data-selected-row="2"] [data-row="2"],
+[data-selected-column="2"] [data-column="2"],
+[data-selected-row="3"] [data-row="3"],
+[data-selected-column="3"] [data-column="3"],
+[data-selected-row="4"] [data-row="4"],
+[data-selected-column="4"] [data-column="4"],
+[data-selected-row="5"] [data-row="5"],
+[data-selected-column="5"] [data-column="5"],
+[data-selected-row="6"] [data-row="6"],
+[data-selected-column="6"] [data-column="6"],
+[data-selected-row="7"] [data-row="7"],
+[data-selected-column="7"] [data-column="7"],
+[data-selected-row="8"] [data-row="8"],
+[data-selected-column="8"] [data-column="8"] {
+  background-color: $intersection-color;
+}
+
+[data-selected-value="1"] [data-value="1"],
+[data-selected-value="2"] [data-value="2"],
+[data-selected-value="3"] [data-value="3"],
+[data-selected-value="4"] [data-value="4"],
+[data-selected-value="5"] [data-value="5"],
+[data-selected-value="6"] [data-value="6"],
+[data-selected-value="7"] [data-value="7"],
+[data-selected-value="8"] [data-value="8"],
+[data-selected-value="9"] [data-value="9"] {
+  background-color: $matching-color;
+}

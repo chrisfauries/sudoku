@@ -1,0 +1,10 @@
+.base {
+    border: none;
+    background-color: white;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    &:hover {
+        background-color: lightblue;
+    }
+}
