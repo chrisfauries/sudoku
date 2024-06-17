@@ -15,12 +15,12 @@
     background-color: rgb(181, 235, 253);
   }
 
-  &.empty {
-    background-color: white;
-    &:focus {
-      background-color: rgb(221, 247, 255);
-    }
-  }
+  // &.empty {
+  //   background-color: white;
+  //   // &:focus {
+  //   //   background-color: rgb(221, 247, 255);
+  //   // }
+  // }
 
   &.correct {
     color: blue;
@@ -34,11 +34,11 @@
   }
 
   &.top-edge {
-    border-top: solid black 1px;
+    border-top: solid black 2px;
   }
 
   &.right-edge {
-    border-right: solid black 1px;
+    border-right: solid black 2px;
   }
 }
 
